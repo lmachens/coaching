@@ -42,7 +42,7 @@ const modal = {
               text: "⭐⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "overall-5",
+            value: "5",
           },
           {
             text: {
@@ -50,7 +50,7 @@ const modal = {
               text: "⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "overall-4",
+            value: "4",
           },
           {
             text: {
@@ -58,7 +58,7 @@ const modal = {
               text: "⭐⭐⭐",
               emoji: true,
             },
-            value: "overall-3",
+            value: "3",
           },
           {
             text: {
@@ -66,7 +66,7 @@ const modal = {
               text: "⭐⭐",
               emoji: true,
             },
-            value: "overall-2",
+            value: "2",
           },
           {
             text: {
@@ -74,7 +74,7 @@ const modal = {
               text: "⭐",
               emoji: true,
             },
-            value: "overall-1",
+            value: "1",
           },
         ],
       },
@@ -95,7 +95,7 @@ const modal = {
               text: "⭐⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "headCoach-5",
+            value: "5",
           },
           {
             text: {
@@ -103,7 +103,7 @@ const modal = {
               text: "⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "headCoach-4",
+            value: "4",
           },
           {
             text: {
@@ -111,7 +111,7 @@ const modal = {
               text: "⭐⭐⭐",
               emoji: true,
             },
-            value: "headCoach-3",
+            value: "3",
           },
           {
             text: {
@@ -119,7 +119,7 @@ const modal = {
               text: "⭐⭐",
               emoji: true,
             },
-            value: "headCoach-2",
+            value: "2",
           },
           {
             text: {
@@ -127,7 +127,7 @@ const modal = {
               text: "⭐",
               emoji: true,
             },
-            value: "headCoach-1",
+            value: "1",
           },
         ],
       },
@@ -148,7 +148,7 @@ const modal = {
               text: "⭐⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "assistentCoach-5",
+            value: "5",
           },
           {
             text: {
@@ -156,7 +156,7 @@ const modal = {
               text: "⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "assistentCoach-4",
+            value: "4",
           },
           {
             text: {
@@ -164,7 +164,7 @@ const modal = {
               text: "⭐⭐⭐",
               emoji: true,
             },
-            value: "assistentCoach-3",
+            value: "3",
           },
           {
             text: {
@@ -172,7 +172,7 @@ const modal = {
               text: "⭐⭐",
               emoji: true,
             },
-            value: "assistentCoach-2",
+            value: "2",
           },
           {
             text: {
@@ -180,7 +180,7 @@ const modal = {
               text: "⭐",
               emoji: true,
             },
-            value: "assistentCoach-1",
+            value: "1",
           },
         ],
       },
@@ -201,7 +201,7 @@ const modal = {
               text: "⭐⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "curriculum-5",
+            value: "5",
           },
           {
             text: {
@@ -209,7 +209,7 @@ const modal = {
               text: "⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "curriculum-4",
+            value: "4",
           },
           {
             text: {
@@ -217,7 +217,7 @@ const modal = {
               text: "⭐⭐⭐",
               emoji: true,
             },
-            value: "curriculum-3",
+            value: "3",
           },
           {
             text: {
@@ -225,7 +225,7 @@ const modal = {
               text: "⭐⭐",
               emoji: true,
             },
-            value: "curriculum-2",
+            value: "2",
           },
           {
             text: {
@@ -233,7 +233,7 @@ const modal = {
               text: "⭐",
               emoji: true,
             },
-            value: "curriculum-1",
+            value: "1",
           },
         ],
       },
@@ -254,7 +254,7 @@ const modal = {
               text: "⭐⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "campus-5",
+            value: "5",
           },
           {
             text: {
@@ -262,7 +262,7 @@ const modal = {
               text: "⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "campus-4",
+            value: "4",
           },
           {
             text: {
@@ -270,7 +270,7 @@ const modal = {
               text: "⭐⭐⭐",
               emoji: true,
             },
-            value: "campus-3",
+            value: "3",
           },
           {
             text: {
@@ -278,7 +278,7 @@ const modal = {
               text: "⭐⭐",
               emoji: true,
             },
-            value: "campus-2",
+            value: "2",
           },
           {
             text: {
@@ -286,7 +286,7 @@ const modal = {
               text: "⭐",
               emoji: true,
             },
-            value: "campus-1",
+            value: "1",
           },
         ],
       },
@@ -307,7 +307,7 @@ const modal = {
               text: "⭐⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "jobCoaching-5",
+            value: "5",
           },
           {
             text: {
@@ -315,7 +315,7 @@ const modal = {
               text: "⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "jobCoaching-4",
+            value: "4",
           },
           {
             text: {
@@ -323,7 +323,7 @@ const modal = {
               text: "⭐⭐⭐",
               emoji: true,
             },
-            value: "jobCoaching-3",
+            value: "3",
           },
           {
             text: {
@@ -331,7 +331,7 @@ const modal = {
               text: "⭐⭐",
               emoji: true,
             },
-            value: "jobCoaching-2",
+            value: "2",
           },
           {
             text: {
@@ -339,7 +339,7 @@ const modal = {
               text: "⭐",
               emoji: true,
             },
-            value: "jobCoaching-1",
+            value: "1",
           },
         ],
       },

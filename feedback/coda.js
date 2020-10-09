@@ -29,11 +29,10 @@ const sendFeedback = async (feedback) => {
     const codaKey = slackToCoda[key];
     const column = columns.items.find((column) => column.name === codaKey);
     return {
-      column,
+      column: column.id,
       value,
     };
   });
-  console.log(cells);
   return fetch(
     `https://coda.io/apis/v1/docs/${process.env.CODA_DOC_ID}/tables/${process.env.CODA_TABLE_ID}/rows`,
     {
