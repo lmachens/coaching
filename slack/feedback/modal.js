@@ -1,5 +1,8 @@
+const fetch = require("node-fetch");
+
 const modal = {
   type: "modal",
+  callback_id: "feedback-modal",
   title: {
     type: "plain_text",
     text: "Coaching Feedback",
@@ -79,4 +82,17 @@ const modal = {
   ],
 };
 
-module.exports = modal;
+const openModal = (payload) => {
+  return fetch("https://slack.com/api/views.open", {
+    headers: {
+      Authorization: `Bearer ${process.env.SLACK_ACCESS_TOKEN}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      trigger_id: payload.action_ts,
+      view: modal,
+    }),
+  });
+};
+
+exports.openModal = openModal;

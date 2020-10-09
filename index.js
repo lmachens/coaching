@@ -17,8 +17,15 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.post("/slack/feedback/modal", (req, res) => {
-  res.json(modal);
+app.post("/slack/feedback/modal", async (req, res) => {
+  try {
+    const payload = JSON.parse(req.body.payload);
+    await modal.openModal(payload);
+    res.send("Modal opened");
+  } catch (error) {
+    console.error(error);
+    res.status(500).send(error.message);
+  }
 });
 
 app.listen(port, () => {
