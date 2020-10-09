@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const modal = require("./slack/feedback/modal");
+const modal = require("./feedback/modal");
 
 const app = express();
 const port = 3000;
@@ -21,7 +21,7 @@ app.post("/slack/feedback/modal", async (req, res) => {
   try {
     const payload = JSON.parse(req.body.payload);
     if (payload.type === "view_submission") {
-      console.log(payload);
+      console.log(payload.view.blocks);
       return res.send();
     }
     await modal.openModal(payload);
