@@ -29,10 +29,9 @@ app.post("/slack/feedback/modal", async (req, res) => {
         }
         return {
           key,
-          value: item.value,
+          value: item.value || "",
         };
       });
-      console.log(feedback);
       await sendFeedback(feedback);
     }
     if (payload.type === "shortcut") {
