@@ -299,6 +299,7 @@ const modal = {
       },
       accessory: {
         type: "radio_buttons",
+        action_id: "jobCoaching",
         options: [
           {
             text: {
