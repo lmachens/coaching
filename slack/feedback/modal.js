@@ -90,7 +90,7 @@ const openModal = (payload) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      trigger_id: payload.action_ts,
+      trigger_id: payload.trigger_id,
       view: modal,
     }),
   });
