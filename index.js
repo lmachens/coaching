@@ -20,6 +20,10 @@ app.get("/", (req, res) => {
 app.post("/slack/feedback/modal", async (req, res) => {
   try {
     const payload = JSON.parse(req.body.payload);
+    if (payload.type === "view_submission") {
+      console.log(payload);
+      return res.send();
+    }
     await modal.openModal(payload);
     res.send("Modal opened");
   } catch (error) {

@@ -38,26 +38,10 @@ const modal = {
           {
             text: {
               type: "plain_text",
-              text: "⭐",
+              text: "⭐⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "overall-1",
-          },
-          {
-            text: {
-              type: "plain_text",
-              text: "⭐⭐",
-              emoji: true,
-            },
-            value: "overall-2",
-          },
-          {
-            text: {
-              type: "plain_text",
-              text: "⭐⭐⭐",
-              emoji: true,
-            },
-            value: "overall-3",
+            value: "overall-5",
           },
           {
             text: {
@@ -70,13 +54,301 @@ const modal = {
           {
             text: {
               type: "plain_text",
+              text: "⭐⭐⭐",
+              emoji: true,
+            },
+            value: "overall-3",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐",
+              emoji: true,
+            },
+            value: "overall-2",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐",
+              emoji: true,
+            },
+            value: "overall-1",
+          },
+        ],
+      },
+    },
+    {
+      type: "section",
+      text: {
+        type: "mrkdwn",
+        text: "Head Coach",
+      },
+      accessory: {
+        type: "radio_buttons",
+        options: [
+          {
+            text: {
+              type: "plain_text",
               text: "⭐⭐⭐⭐⭐",
               emoji: true,
             },
-            value: "overall-5",
+            value: "headCoach-5",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐⭐",
+              emoji: true,
+            },
+            value: "headCoach-4",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐",
+              emoji: true,
+            },
+            value: "headCoach-3",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐",
+              emoji: true,
+            },
+            value: "headCoach-2",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐",
+              emoji: true,
+            },
+            value: "headCoach-1",
           },
         ],
-        action_id: "radio_buttons-action",
+      },
+    },
+    {
+      type: "section",
+      text: {
+        type: "mrkdwn",
+        text: "Assistent Coach",
+      },
+      accessory: {
+        type: "radio_buttons",
+        options: [
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐⭐⭐",
+              emoji: true,
+            },
+            value: "assistentCoach-5",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐⭐",
+              emoji: true,
+            },
+            value: "assistentCoach-4",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐",
+              emoji: true,
+            },
+            value: "assistentCoach-3",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐",
+              emoji: true,
+            },
+            value: "assistentCoach-2",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐",
+              emoji: true,
+            },
+            value: "assistentCoach-1",
+          },
+        ],
+      },
+    },
+    {
+      type: "section",
+      text: {
+        type: "mrkdwn",
+        text: "Curriculum",
+      },
+      accessory: {
+        type: "radio_buttons",
+        options: [
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐⭐⭐",
+              emoji: true,
+            },
+            value: "curriculum-5",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐⭐",
+              emoji: true,
+            },
+            value: "curriculum-4",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐",
+              emoji: true,
+            },
+            value: "curriculum-3",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐",
+              emoji: true,
+            },
+            value: "curriculum-2",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐",
+              emoji: true,
+            },
+            value: "curriculum-1",
+          },
+        ],
+      },
+    },
+    {
+      type: "section",
+      text: {
+        type: "mrkdwn",
+        text: "Campus",
+      },
+      accessory: {
+        type: "radio_buttons",
+        options: [
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐⭐⭐",
+              emoji: true,
+            },
+            value: "campus-5",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐⭐",
+              emoji: true,
+            },
+            value: "campus-4",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐",
+              emoji: true,
+            },
+            value: "campus-3",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐",
+              emoji: true,
+            },
+            value: "campus-2",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐",
+              emoji: true,
+            },
+            value: "campus-1",
+          },
+        ],
+      },
+    },
+    {
+      type: "section",
+      text: {
+        type: "mrkdwn",
+        text: "Job Coaching",
+      },
+      accessory: {
+        type: "radio_buttons",
+        options: [
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐⭐⭐",
+              emoji: true,
+            },
+            value: "jobCoaching-5",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐⭐",
+              emoji: true,
+            },
+            value: "jobCoaching-4",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐⭐",
+              emoji: true,
+            },
+            value: "jobCoaching-3",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐⭐",
+              emoji: true,
+            },
+            value: "jobCoaching-2",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "⭐",
+              emoji: true,
+            },
+            value: "jobCoaching-1",
+          },
+        ],
+      },
+    },
+    {
+      type: "input",
+      element: {
+        type: "plain_text_input",
+        multiline: true,
+        action_id: "plain_text_input-action",
+      },
+      label: {
+        type: "plain_text",
+        text: "Tell me more",
+        emoji: true,
       },
     },
   ],
