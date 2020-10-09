@@ -21,7 +21,7 @@ app.post("/slack/feedback/modal", async (req, res) => {
   try {
     const payload = JSON.parse(req.body.payload);
     if (payload.type === "view_submission") {
-      console.log(payload.view.blocks);
+      console.log(payload.state.values);
       return res.send();
     }
     await modal.openModal(payload);

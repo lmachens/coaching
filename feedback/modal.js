@@ -34,6 +34,7 @@ const modal = {
       },
       accessory: {
         type: "radio_buttons",
+        action_id: "overall",
         options: [
           {
             text: {
@@ -86,6 +87,7 @@ const modal = {
       },
       accessory: {
         type: "radio_buttons",
+        action_id: "headCoach",
         options: [
           {
             text: {
@@ -138,6 +140,7 @@ const modal = {
       },
       accessory: {
         type: "radio_buttons",
+        action_id: "assistentCoach",
         options: [
           {
             text: {
@@ -190,6 +193,7 @@ const modal = {
       },
       accessory: {
         type: "radio_buttons",
+        action_id: "curriculum",
         options: [
           {
             text: {
@@ -242,6 +246,7 @@ const modal = {
       },
       accessory: {
         type: "radio_buttons",
+        action_id: "campus",
         options: [
           {
             text: {
@@ -343,6 +348,7 @@ const modal = {
       element: {
         type: "plain_text_input",
         multiline: true,
+        action_id: "details",
       },
       label: {
         type: "plain_text",
