@@ -1,0 +1,22 @@
+{
+  "name": "coaching",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tools for my coaching service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmachens/coaching.git"
+  },
+  "keywords": [],
+  "author": "Leon Machens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmachens/coaching/issues"
+  },
+  "homepage": "https://github.com/lmachens/coaching#readme"
+}
