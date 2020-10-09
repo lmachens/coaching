@@ -8,7 +8,7 @@ const port = 3000;
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {
-  console.log(req.url, req.method, req.body);
+  console.log(req.url, req.method, req.query, req.body);
   next();
 });
 
