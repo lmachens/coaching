@@ -84,6 +84,7 @@ const modal = {
 
 const openModal = (payload) => {
   return fetch("https://slack.com/api/views.open", {
+    method: "POST",
     headers: {
       Authorization: `Bearer ${process.env.SLACK_ACCESS_TOKEN}`,
       "Content-Type": "application/json",
