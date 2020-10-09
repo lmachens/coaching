@@ -1,21 +1,25 @@
-const http = require("http");
+const express = require("express");
+const bodyParser = require("body-parser");
 const modal = require("./slack/feedback/modal");
 
+const app = express();
 const port = 3000;
 
-const server = http.createServer((req, res) => {
+app.use(bodyParser.json());
+
+app.use((req, res, next) => {
   console.log(req.url, req.method, req.body);
-  if (req.method === "POST" && req.url === "/slack/feedback/modal") {
-    res.statusCode = 200;
-    res.setHeader("Content-Type", "application/json");
-    res.end(JSON.stringify(modal));
-    return;
-  }
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "text/plain");
-  res.end("Hello World");
+  next();
 });
 
-server.listen(port, () => {
-  console.log(`Server running at http://127.0.0.1:${port}/`);
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
+app.post("/slack/feedback/modal", (req, res) => {
+  res.json(modal);
+});
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`);
 });
