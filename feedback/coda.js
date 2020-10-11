@@ -34,6 +34,7 @@ const sendFeedback = async (feedback) => {
       value: value || "",
     };
   });
+  console.log(cells);
   return fetch(
     `https://coda.io/apis/v1/docs/${process.env.CODA_DOC_ID}/tables/${process.env.CODA_TABLE_ID}/rows`,
     {

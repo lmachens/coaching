@@ -32,6 +32,7 @@ app.post("/slack/feedback/modal", async (req, res) => {
           value: item.value || "",
         };
       });
+      console.log(feedback);
       // Do not wait for slow ass coda, because Slack awaits an answer in less than 3 secs
       sendFeedback(feedback);
     }
