@@ -17,12 +17,11 @@ app.post("/slack/feedback/modal", async (req, res) => {
   try {
     const payload = JSON.parse(req.body.payload);
     if (payload.type === "view_submission") {
-      console.log(payload.view.state.values);
       const feedback = Object.values(payload.view.state.values).map((value) => {
         const key = Object.keys(value)[0];
         const item = value[key];
 
-        if (item.type === "radio_buttons") {
+        if (item.type === "radio_buttons" || item.type === "static_select") {
           return {
             key,
             value: item.selected_option ? item.selected_option.value : null,
