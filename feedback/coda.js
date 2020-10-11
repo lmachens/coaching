@@ -1,6 +1,7 @@
 const fetch = require("node-fetch");
 
 const slackToCoda = {
+  course: "Course",
   jobCoaching: "Job-Coaching",
   assistentCoach: "Assistant Coach",
   campus: "Campus",

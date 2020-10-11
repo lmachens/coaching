@@ -23,6 +23,32 @@ const modal = {
       type: "section",
       text: {
         type: "mrkdwn",
+        text: "Course",
+      },
+      accessory: {
+        type: "static_select",
+        placeholder: {
+          type: "plain_text",
+          text: "Select your course",
+          emoji: true,
+        },
+        options: [
+          {
+            text: {
+              type: "plain_text",
+              text: "CGN-Web-20-4",
+              emoji: true,
+            },
+            value: "CGN-Web-20-4",
+          },
+        ],
+        action_id: "course",
+      },
+    },
+    {
+      type: "section",
+      text: {
+        type: "mrkdwn",
         text: "How do you feel?",
       },
     },
