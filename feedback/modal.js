@@ -41,6 +41,30 @@ const modal = {
             },
             value: "CGN-Web-20-4",
           },
+          {
+            text: {
+              type: "plain_text",
+              text: "HH-Web-20-4",
+              emoji: true,
+            },
+            value: "HH-Web-20-4",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "HH-Web-20-5",
+              emoji: true,
+            },
+            value: "HH-Web-20-5",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "MUC-Web-20-1",
+              emoji: true,
+            },
+            value: "MUC-Web-20-1",
+          },
         ],
         action_id: "course",
       },
