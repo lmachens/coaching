@@ -20,12 +20,14 @@ const modal = {
   },
   blocks: [
     {
-      type: "section",
-      text: {
-        type: "mrkdwn",
+      type: "input",
+      optional: false,
+      label: {
+        type: "plain_text",
         text: "Course",
+        emoji: true,
       },
-      accessory: {
+      element: {
         type: "static_select",
         placeholder: {
           type: "plain_text",
@@ -133,7 +135,7 @@ const modal = {
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "Head Coach",
+        text: "Head Coach (optional)",
       },
       accessory: {
         type: "radio_buttons",
@@ -186,7 +188,7 @@ const modal = {
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "Assistent Coach",
+        text: "Assistent Coach (optional)",
       },
       accessory: {
         type: "radio_buttons",
@@ -239,7 +241,7 @@ const modal = {
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "Curriculum",
+        text: "Curriculum (optional)",
       },
       accessory: {
         type: "radio_buttons",
@@ -292,7 +294,7 @@ const modal = {
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "Campus",
+        text: "Campus (optional)",
       },
       accessory: {
         type: "radio_buttons",
@@ -345,7 +347,7 @@ const modal = {
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "Job Coaching",
+        text: "Job Coaching (optional)",
       },
       accessory: {
         type: "radio_buttons",
@@ -396,6 +398,7 @@ const modal = {
     },
     {
       type: "input",
+      optional: true,
       element: {
         type: "plain_text_input",
         multiline: true,
