@@ -67,6 +67,30 @@ const modal = {
             },
             value: "MUC-Web-20-1",
           },
+          {
+            text: {
+              type: "plain_text",
+              text: "TypeScript Beginners with Leon",
+              emoji: true,
+            },
+            value: "TypeScript Beginners with Leon",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "React Native with Fabian",
+              emoji: true,
+            },
+            value: "React Native with Fabian",
+          },
+          {
+            text: {
+              type: "plain_text",
+              text: "Testing with Marco",
+              emoji: true,
+            },
+            value: "Testing with Marco",
+          },
         ],
         action_id: "course",
       },
@@ -82,7 +106,7 @@ const modal = {
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "Overall",
+        text: "Personal",
       },
       accessory: {
         type: "radio_buttons",
