@@ -110,7 +110,7 @@ const modal = {
       },
       accessory: {
         type: "radio_buttons",
-        action_id: "overall",
+        action_id: "personal",
         options: [
           {
             text: {

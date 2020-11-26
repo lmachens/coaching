@@ -8,7 +8,7 @@ const slackToCoda = {
   curriculum: "Curriculum",
   details: "Other",
   headCoach: "Head Coach",
-  overall: "Overall",
+  personal: "Personal",
 };
 
 const getColumns = async () => {
