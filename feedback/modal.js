@@ -70,10 +70,10 @@ const modal = {
           {
             text: {
               type: "plain_text",
-              text: "React Context Workshop with Leon",
+              text: "PWA Workshop with Leon",
               emoji: true,
             },
-            value: "React Context Workshop with Leon",
+            value: "PWA Workshop with Leon",
           },
         ],
         action_id: "course",
