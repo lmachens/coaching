@@ -53,4 +53,19 @@ const sendFeedback = async (feedback) => {
   );
 };
 
+const getCourses = async () => {
+  const response = await fetch(
+    `https://coda.io/apis/v1/docs/${process.env.CODA_DOC_ID}/tables/${process.env.CODA_COURSES_TABLE_ID}/rows`,
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.CODA_ACCESS_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+    }
+  );
+  const result = await response.json();
+  return result.items.map((item) => item.name);
+};
+
 exports.sendFeedback = sendFeedback;
+exports.getCourses = getCourses;

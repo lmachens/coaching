@@ -1,4 +1,5 @@
 const fetch = require("node-fetch");
+const { getCourses } = require("./coda");
 
 const modal = {
   type: "modal",
@@ -35,46 +36,7 @@ const modal = {
           emoji: true,
         },
         options: [
-          {
-            text: {
-              type: "plain_text",
-              text: "CGN-Web-20-4",
-              emoji: true,
-            },
-            value: "CGN-Web-20-4",
-          },
-          {
-            text: {
-              type: "plain_text",
-              text: "HH-Web-20-4",
-              emoji: true,
-            },
-            value: "HH-Web-20-4",
-          },
-          {
-            text: {
-              type: "plain_text",
-              text: "HH-Web-20-5",
-              emoji: true,
-            },
-            value: "HH-Web-20-5",
-          },
-          {
-            text: {
-              type: "plain_text",
-              text: "MUC-Web-20-1",
-              emoji: true,
-            },
-            value: "MUC-Web-20-1",
-          },
-          {
-            text: {
-              type: "plain_text",
-              text: "PWA Workshop with Leon",
-              emoji: true,
-            },
-            value: "PWA Workshop with Leon",
-          },
+          // options will be set based on coda table "Feedback courses"
         ],
         action_id: "course",
       },
@@ -421,8 +383,19 @@ const modal = {
   ],
 };
 
-const openModal = (payload) => {
-  return fetch("https://slack.com/api/views.open", {
+const openModal = async (payload) => {
+  const courses = await getCourses();
+  const newModal = { ...modal };
+  newModal.blocks[0].element.options = courses.map((course) => ({
+    text: {
+      type: "plain_text",
+      text: course,
+      emoji: true,
+    },
+    value: course,
+  }));
+
+  return await fetch("https://slack.com/api/views.open", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${process.env.SLACK_ACCESS_TOKEN}`,
