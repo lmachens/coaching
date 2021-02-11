@@ -383,8 +383,13 @@ const modal = {
   ],
 };
 
+let coursesPromise = getCourses();
+setInterval(() => {
+  coursesPromise = getCourses();
+}, 1000 * 60 * 5);
+
 const openModal = async (payload) => {
-  const courses = await getCourses();
+  await coursesPromise();
   const newModal = { ...modal };
   newModal.blocks[0].element.options = courses.map((course) => ({
     text: {
