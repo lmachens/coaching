@@ -16,6 +16,7 @@ app.get("/", (req, res) => {
 app.post("/slack/feedback/modal", async (req, res) => {
   try {
     const payload = JSON.parse(req.body.payload);
+    console.log(`Requested ${payload.type} `);
     if (payload.type === "view_submission") {
       const feedback = Object.values(payload.view.state.values).map((value) => {
         const key = Object.keys(value)[0];
