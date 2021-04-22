@@ -1,7 +1,9 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const modal = require("./feedback/modal");
 const { sendFeedback } = require("./feedback/coda");
+const { generatePDF } = require("./certificate/pdf");
 
 const app = express();
 const port = 3000;
@@ -11,6 +13,14 @@ app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
+});
+
+app.get("/pdf", (req, res) => {
+  const { name } = req.query;
+  if (!name) {
+    return res.status(400).end("Invalid query");
+  }
+  generatePDF({ name }, res);
 });
 
 app.post("/slack/feedback/modal", async (req, res) => {
