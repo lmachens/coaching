@@ -2,10 +2,8 @@ const PDFDocument = require("pdfkit");
 
 const A4SIZE = [595.28, 841.89];
 function generatePDF({ name }, res) {
-  // require dependencies
   res.setHeader("Content-Type", "application/pdf");
 
-  // create a document the same way as above
   const doc = new PDFDocument({ size: "A4" });
   doc.pipe(res);
 
